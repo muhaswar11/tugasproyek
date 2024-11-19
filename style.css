@@ -1,0 +1,100 @@
+/* CSS dasar untuk seluruh elemen */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk body */
+body {
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa); /* Background dengan gradien lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* CSS untuk container form */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #d6e0f5; /* Warna biru muda untuk latar belakang form */
+    border-radius: 10px; /* Membuat sudut form lebih lembut */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* CSS untuk judul "Form Pendaftaran" */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Menambahkan jarak bawah untuk memberi ruang */
+    padding: 0 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    font-size: 1.8em; /* Sesuaikan ukuran sesuai keinginan */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #4b0082; /* Warna ungu untuk tampilan menarik */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CSS untuk teks deskripsi */
+p {
+    text-align: center;
+    color: #666;
+    margin-top: -0.5rem;
+}
+
+/* CSS untuk label */
+label {
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+    color: #333;
+}
+
+/* Kontainer untuk input yang memiliki beberapa kolom */
+.name-container,
+.birthdate-container,
+.gender-container,
+.address-container {
+    display: flex;
+    gap: 1rem;
+}
+
+/* CSS untuk input, select, dan button */
+input, select, button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* CSS untuk button */
+button {
+    background-color: #3366ff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #254ecf;
+}
+
+/* Efek fokus untuk input dan select */
+input:focus, select:focus {
+    border-color: #4b0082; /* Warna ungu saat fokus */
+    outline: none;
+}

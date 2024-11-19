@@ -1,0 +1,117 @@
+/* CSS dasar untuk seluruh elemen */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* CSS untuk body */
+body {
+    background: linear-gradient(135deg, #f0f4ff, #e6e9f5); /* Background gradien lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* CSS untuk container form */
+.container {
+    width: 50%;
+    padding: 2rem;
+    background-color: #d6e0f5; /* Background container form */
+    border-radius: 12px; /* Sudut lebih melengkung */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih lembut */
+    border: 1px solid #d3d3d3; /* Border halus */
+}
+
+/* CSS untuk judul form */
+h2 {
+    text-align: center;
+    color: #32295a;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px; /* Memberikan jarak antar huruf untuk kesan elegan */
+}
+
+/* CSS untuk setiap grup form */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* CSS untuk label form */
+label {
+    font-weight: bold;
+    display: block;
+    color: #32295a;
+    margin-bottom: 0.5rem;
+}
+
+/* CSS untuk input, select, dan input tanggal */
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9fafb; /* Background input */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek fokus pada input dan select */
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #3366ff; /* Border biru saat fokus */
+    box-shadow: 0 0 5px rgba(51, 102, 255, 0.3); /* Bayangan biru lembut saat fokus */
+    outline: none;
+}
+
+/* CSS untuk tanda asterisk wajib */
+.required {
+    color: #ff3333; /* Warna merah mencolok */
+    font-weight: bold;
+}
+
+/* CSS untuk grup aksi tombol */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+/* CSS untuk tombol */
+button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS untuk tombol kembali */
+#backButton {
+    background-color: #3366ff;
+    color: #fff;
+}
+
+#backButton:hover {
+    background-color: #bfbfbf;
+}
+
+/* CSS untuk tombol lanjut */
+#nextButton {
+    background-color: #3366ff;
+    color: #fff;
+}
+
+#nextButton:hover {
+    background-color: #254ecf;
+}
+
+/* Responsif untuk tampilan di layar lebih kecil */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}

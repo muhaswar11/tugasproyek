@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Masuk Universitas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pendaftaran Masuk Universitas</h1>
+        <h2>Form Pendaftaran</h2>
+        <!-- Ini adalah judul tambahan yang Anda inginkan -->
+        <p>Isi form di bawah ini untuk mendaftar ke universitas.</p>
+        
+        <!-- Form Pendaftaran -->
+        <form id="registrationForm" method="post"> 
+            <!-- Form fields -->
+            <label>Nama *</label>
+            <div class="name-container">
+                <input type="text" id="namaDepan" placeholder="Nama Depan" required>
+                <input type="text" id="namaBelakang" placeholder="Nama Belakang" required>
+            </div>
+
+            <label>Tanggal Lahir *</label>
+            <div class="birthdate-container">
+                <!-- Pilihan bulan -->
+                <select required>
+                    <option value="" disabled selected>Bulan</option>
+                    <option value="01">Januari</option>
+                    <option value="02">Februari</option>
+                    <option value="03">Maret</option>
+                    <option value="04">April</option>
+                    <option value="05">Mei</option>
+                    <option value="06">Juni</option>
+                    <option value="07">Juli</option>
+                    <option value="08">Agustus</option>
+                    <option value="09">September</option>
+                    <option value="10">Oktober</option>
+                    <option value="11">November</option>
+                    <option value="12">Desember</option>
+                </select>
+
+                <!-- Pilihan hari dari 1 sampai 31 -->
+                <select required>
+                    <option value="" disabled selected>Hari</option>
+                    <script>
+                        for (let day = 1; day <= 31; day++) {
+                            document.write(`<option value="${day}">${day}</option>`);
+                        }
+                    </script>
+                </select>
+
+                <!-- Pilihan tahun dari 1945 sampai 2024 -->
+                <select required>
+                    <option value="" disabled selected>Tahun</option>
+                    <script>
+                        for (let year = 1945; year <= 2024; year++) {
+                            document.write(`<option value="${year}">${year}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+
+            <label>Jenis Kelamin *</label>
+            <div class="gender-container">
+                <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+                <input type="radio" name="gender" value="Perempuan"> Perempuan
+            </div>            
+
+            <label>Asal Provinsi *</label>
+<select required>
+    <option value="" disabled selected>Pilih Provinsi</option>
+    <option value="Aceh">Aceh</option>
+    <option value="Bali">Bali</option>
+    <option value="Banten">Banten</option>
+    <option value="Bengkulu">Bengkulu</option>
+    <option value="DI Yogyakarta">DI Yogyakarta</option>
+    <option value="DKI Jakarta">DKI Jakarta</option>
+    <option value="Gorontalo">Gorontalo</option>
+    <option value="Jambi">Jambi</option>
+    <option value="Jawa Barat">Jawa Barat</option>
+    <option value="Jawa Tengah">Jawa Tengah</option>
+    <option value="Jawa Timur">Jawa Timur</option>
+    <option value="Kalimantan Barat">Kalimantan Barat</option>
+    <option value="Kalimantan Selatan">Kalimantan Selatan</option>
+    <option value="Kalimantan Tengah">Kalimantan Tengah</option>
+    <option value="Kalimantan Timur">Kalimantan Timur</option>
+    <option value="Kalimantan Utara">Kalimantan Utara</option>
+    <option value="Kepulauan Bangka Belitung">Kepulauan Bangka Belitung</option>
+    <option value="Kepulauan Riau">Kepulauan Riau</option>
+    <option value="Lampung">Lampung</option>
+    <option value="Maluku">Maluku</option>
+    <option value="Maluku Utara">Maluku Utara</option>
+    <option value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+    <option value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+    <option value="Papua">Papua</option>
+    <option value="Papua Barat">Papua Barat</option>
+    <option value="Papua Selatan">Papua Selatan</option>
+    <option value="Papua Pegunungan">Papua Pegunungan</option>
+    <option value="Papua Tengah">Papua Tengah</option>
+    <option value="Riau">Riau</option>
+    <option value="Sulawesi Barat">Sulawesi Barat</option>
+    <option value="Sulawesi Selatan">Sulawesi Selatan</option>
+    <option value="Sulawesi Tengah">Sulawesi Tengah</option>
+    <option value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+    <option value="Sulawesi Utara">Sulawesi Utara</option>
+    <option value="Sumatera Barat">Sumatera Barat</option>
+    <option value="Sumatera Selatan">Sumatera Selatan</option>
+    <option value="Sumatera Utara">Sumatera Utara</option>
+</select>
+
+            </select>
+
+            <label>No Tlp *</label>
+            <input type="tel" id="noTlp" placeholder="000000000000" required>
+
+            <label>Alamat Email *</label>
+            <input type="email" id="email" placeholder="ex: myname@example.com" required>
+
+            <label>Alamat Rumah *</label>
+            <input type="text" placeholder="Street Address" required>
+            <div class="address-container">
+                <input type="text" placeholder="City" required>
+                <input type="text" placeholder="State / Province" required>
+                <input type="text" placeholder="Postal / Zip Code" required>
+            </div>
+
+            <button type="submit" id="nextButton">Next</button> <!-- Menggunakan type="submit" untuk mengirim form -->
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

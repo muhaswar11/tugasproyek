@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal Sekolah</title>
+    <link rel="stylesheet" href="style_asal_sekolah.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Asal Sekolah</h2>
+        <form id="schoolForm">
+            <div class="form-group">
+                <label for="namaSekolah">Nama Sekolah <span class="required">*</span></label>
+                <input type="text" id="namaSekolah" placeholder="Nama Sekolah" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="tanggalLulus">Tanggal Lulus</label>
+                <input type="date" id="tanggalLulus" placeholder="MM-DD-YYYY">
+            </div>
+            
+            <div class="form-group">
+                <label for="alamatSekolah">Alamat Sekolah</label>
+                <input type="text" id="alamatSekolah" placeholder="City">
+                <input type="text" id="stateProvince" placeholder="State / Province">
+            </div>
+            
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select id="country" required>
+                    <option value="" disabled selected>Please Select</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="India">India</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="South Africa">South Africa</option>
+                </select>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" id="backButton">Back</button>
+                <button type="submit" id="nextButton">Next</button>
+            </div>
+        </form>
+    </div>
+    <script src="script_asal_sekolah.js"></script>
+</body>
+</html>
